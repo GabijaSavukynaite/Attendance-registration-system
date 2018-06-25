@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+   <children>
+      <TableView fx:id="tableView" prefHeight="369.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="fNameColumn" prefWidth="153.0" text="Vardas" />
+          <TableColumn fx:id="sNameColumn" minWidth="0.0" prefWidth="223.0" text="Pavardė" />
+            <TableColumn fx:id="attendanceColumn" prefWidth="149.0" text="Dalyvavo" />
+        </columns>
+      </TableView>
+      <Button fx:id="submitButton" layoutX="422.0" layoutY="373.0" mnemonicParsing="false" onAction="#submitClicked" text="Patvirtinti" />
+   </children>
+</Pane>

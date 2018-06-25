@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <top>
+      <VBox prefHeight="0.0" prefWidth="977.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="967.0" text="Lankomumo žymėjimas">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox>
+               <children>
+                  <Label prefHeight="27.0" prefWidth="75.0" text="Grupė" />
+                  <TextField fx:id="attGroupTextF" />
+                  <Label prefHeight="27.0" prefWidth="86.0" text="Kursas" />
+                  <TextField fx:id="attCourseTextF" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <DatePicker fx:id="datePicker" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <HBox prefHeight="270.0" prefWidth="733.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="149.0" prefWidth="261.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="273.0" text="Žymėti lankomumą visai grupei" />
+                  <HBox prefHeight="100.0" prefWidth="301.0">
+                     <children>
+                        <ComboBox fx:id="comboBox" prefHeight="39.0" prefWidth="137.0" />
+                        <Button fx:id="submitGButton" mnemonicParsing="false" onAction="#submitGClicked" text="Patvirtinti" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="173.0" prefWidth="246.0">
+               <children>
+                  <Label prefHeight="57.0" prefWidth="246.0" text="Žymėti lankomumą atskirai kiekvienam grupės srudentui" wrapText="true" />
+                  <Button mnemonicParsing="false" onAction="#showDataClicked" text="Rodyti grupės sąrašą" />
+               </children>
+            </VBox>
+            <VBox prefHeight="179.0" prefWidth="226.0">
+               <children>
+                  <Label prefHeight="59.0" prefWidth="226.0" text="Gauti duomenis apie lankomumą į failą" wrapText="true" />
+                  <HBox prefHeight="44.0" prefWidth="226.0">
+                     <children>
+                        <Label text="Nuo" />
+                        <TextField fx:id="dateSTextF" prefHeight="39.0" prefWidth="164.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="3.0" prefWidth="226.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="37.0" text="Iki" />
+                        <TextField fx:id="dateETextF" prefHeight="39.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#createFileClicked" text="Sukurti failą" />
+               </children></VBox>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>
